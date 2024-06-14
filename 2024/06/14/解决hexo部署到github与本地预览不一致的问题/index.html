@@ -13,22 +13,24 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://huibai-hub.github.io/2024/06/14/对uboot和内核裁剪的一些理解/"/>
+    <link rel="canonical" href="https://huibai-hub.github.io/2024/06/14/解决hexo部署到github与本地预览不一致的问题/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="&emsp;&emsp;“精通uboot”：uboot是bootloader的一种，bootloader要做的工作就是初始化硬件和增加一些开机前的功能。首先，因为厂家给到的bootloader是基于他们的开发板，而自己用的产品会在厂家的基础上进行硬件的修改。硬件被修改了，那么bootloader的初始化硬件这个工作里面的配置和代码逻辑就要修改；其次，厂家的开发板是有广适性的，所以必然有一些对于自己">
+        <meta name="description" content="打开根目录下的_config.yml文件，确保有url和root属性，且url属性的值为博客网址，root的值如下所示： url：https:&#x2F;&#x2F;huibai-hub.github.io root: &#x2F; url：https:&#x2F;&#x2F;huibai-hub.github.io&#x2F;blog root：&#x2F;blog  我不一致的原因是缺少了root属性：  添加root属性即解决">
 <meta property="og:type" content="article">
-<meta property="og:title" content="对uboot和内核裁剪的一些理解">
-<meta property="og:url" content="https://huibai-hub.github.io/2024/06/14/%E5%AF%B9uboot%E5%92%8C%E5%86%85%E6%A0%B8%E8%A3%81%E5%89%AA%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3/index.html">
+<meta property="og:title" content="解决hexo部署到github与本地预览不一致的问题">
+<meta property="og:url" content="https://huibai-hub.github.io/2024/06/14/%E8%A7%A3%E5%86%B3hexo%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8E%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88%E4%B8%8D%E4%B8%80%E8%87%B4%E7%9A%84%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="&emsp;&emsp;“精通uboot”：uboot是bootloader的一种，bootloader要做的工作就是初始化硬件和增加一些开机前的功能。首先，因为厂家给到的bootloader是基于他们的开发板，而自己用的产品会在厂家的基础上进行硬件的修改。硬件被修改了，那么bootloader的初始化硬件这个工作里面的配置和代码逻辑就要修改；其次，厂家的开发板是有广适性的，所以必然有一些对于自己">
+<meta property="og:description" content="打开根目录下的_config.yml文件，确保有url和root属性，且url属性的值为博客网址，root的值如下所示： url：https:&#x2F;&#x2F;huibai-hub.github.io root: &#x2F; url：https:&#x2F;&#x2F;huibai-hub.github.io&#x2F;blog root：&#x2F;blog  我不一致的原因是缺少了root属性：  添加root属性即解决">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-06-14T11:10:40.000Z">
-<meta property="article:modified_time" content="2024-06-14T12:44:21.732Z">
+<meta property="og:image" content="https://huibai-hub.github.io/image.png">
+<meta property="article:published_time" content="2024-06-14T13:05:43.000Z">
+<meta property="article:modified_time" content="2024-06-14T13:19:44.612Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://huibai-hub.github.io/image.png">
     
     
     <!--- Icon Part-->
@@ -40,7 +42,7 @@
     
     <title>
         
-            对uboot和内核裁剪的一些理解 -
+            解决hexo部署到github与本地预览不一致的问题 -
         
         Theme Redefine
     </title>
@@ -386,7 +388,7 @@
         <div class="article-title relative w-full">
             
                 <div class="w-full flex items-center pt-6 justify-start">
-                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">对uboot和内核裁剪的一些理解</h1>
+                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">解决hexo部署到github与本地预览不一致的问题</h1>
                 </div>
             
             </div>
@@ -407,15 +409,15 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2024-06-14 19:10:40</span>
-        <span class="mobile">2024-06-14 19:10:40</span>
+        <span class="desktop">2024-06-14 21:05:43</span>
+        <span class="mobile">2024-06-14 21:05:43</span>
         <span class="hover-info">Created</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-06-14 20:44:21</span>
-            <span class="mobile">2024-06-14 20:44:21</span>
+            <span class="desktop">2024-06-14 21:19:44</span>
+            <span class="mobile">2024-06-14 21:19:44</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -442,8 +444,20 @@
 
 
         <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <p>&emsp;&emsp;<strong>“精通uboot”</strong>：uboot是bootloader的一种，bootloader要做的工作就是初始化硬件和增加一些开机前的功能。<strong>首先</strong>，因为厂家给到的bootloader是基于他们的开发板，而自己用的产品会在厂家的基础上进行硬件的修改。硬件被修改了，那么bootloader的初始化硬件这个工作里面的配置和代码逻辑就要修改；<strong>其次</strong>，厂家的开发板是有广适性的，所以必然有一些对于自己产品而言繁冗的功能硬件，所以要对这些多余的功能硬件进行删减，那么就要修改bootloader的代码和配置；<strong>再而</strong>，开机动画和开机声音是属于系统启动之前的，所以在bootloader中会定义开机动画和开机声音，这些功能要符合自己产品，所以要在bootloader，也就是uboot中进行修改，再例如开机前对外设的检测，也要根据在的产品进行修改。</br><br>&emsp;&emsp;<strong>“内核裁剪”</strong>：以linux为例,众所周知，linux内核是一个内容丰富的kernel，但是对于自己的产品而言，内容过于丰富的内核并不是一件好事，所以需要对内核的功能之类的进行裁剪使之体积更小。这些被裁剪的功能包括：根文件系统、用户交互界面、不需要的设备驱动和新增的设备驱动等。在裁剪之后要保证设备能正常启动、各子系统正常加载运转，所以内核裁剪的工作还体现在调试和改bug上，对于部分安卓系统而言，还需要做版本升级和各种vts测试。</br></p>
-<h1 id="0-bootloader的概念"><a href="#0-bootloader的概念" class="headerlink" title="0.bootloader的概念"></a><strong>0.bootloader的概念</strong></h1><p>&emsp;&emsp;首先需要理解一下裸机程序的概念，大多数我们所接触到的程序，都拥有一个main函数，那些程序是运行在操作系统上的，没有操作系统给这些带main的程序分配资源的话它们是运行不起来的，mian函数其实是操作系统给我们规定好的程序入口的标志，有了这个入口标志，程序就知道从哪里开始运行。但是有一种程序不用运行在操作系统上，也就是所谓的裸机程序（又叫裸板程序），它们的入口函数名字随意起，叫不叫main都可以，而bootloader（或者uboot）就是一种裸机程序。</br><br>&emsp;&emsp;bootloader是两个东西：boot+loader，boot是引导的意思，loader是加载的意思。在嵌入式系统中，通常没有电脑中BIOS这样的固件程序，因此整个系统的加载启动就完全由bootloader来完成。bootloader是CPU上电后运行的第一段程序。<br>&emsp;&emsp;不同的CPU体系结构有不同的bootloader，例如uboot就同时支持ARM和MIPS体系结构</p>
+            <p>打开根目录下的_config.yml文件，确保有url和root属性，且url属性的值为博客网址，root的值如下所示：</br></p>
+<pre><code>url：https://huibai-hub.github.io
+root: /
+url：https://huibai-hub.github.io/blog
+root：/blog
+</code></pre>
+<p>我不一致的原因是缺少了root属性：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/image.png"
+                      alt="alt text"
+                ></p>
+<p>添加root属性即解决</p>
 
         </div>
 
@@ -451,18 +465,18 @@
             <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>Title:</strong> 对uboot和内核裁剪的一些理解</li>
+        <li><strong>Title:</strong> 解决hexo部署到github与本地预览不一致的问题</li>
         <li><strong>Author:</strong> The Redefine Team</li>
         <li><strong>Created at
-                :</strong> 2024-06-14 19:10:40</li>
+                :</strong> 2024-06-14 21:05:43</li>
         
             <li>
                 <strong>Updated at
-                    :</strong> 2024-06-14 20:44:21
+                    :</strong> 2024-06-14 21:19:44
             </li>
         
         <li>
-            <strong>Link:</strong> https://redefine.ohevan.com/2024/06/14/对uboot和内核裁剪的一些理解/
+            <strong>Link:</strong> https://redefine.ohevan.com/2024/06/14/解决hexo部署到github与本地预览不一致的问题/
         </li>
         <li>
             <strong>
@@ -487,29 +501,14 @@
         
             <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
                 
-                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="prev"
-                        rel="prev"
-                        href="/2024/06/14/%E8%A7%A3%E5%86%B3hexo%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8E%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88%E4%B8%8D%E4%B8%80%E8%87%B4%E7%9A%84%E9%97%AE%E9%A2%98/"
-                        >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">解决hexo部署到github与本地预览不一致的问题</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
                 
                     <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
                         <a class="next"
                         rel="next"
-                        href="/2024/04/29/IIC%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AD%A6%E4%B9%A0/"
+                        href="/2024/06/14/%E5%AF%B9uboot%E5%92%8C%E5%86%85%E6%A0%B8%E8%A3%81%E5%89%AA%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3/"
                         >
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">IIC第一次学习</span>
+                                <span class="post-nav-title-item">对uboot和内核裁剪的一些理解</span>
                                 <span class="post-nav-item">Next posts</span>
                             </span>
                             <span class="right arrow-icon flex justify-center items-center">
@@ -572,8 +571,8 @@
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">On this page</div>
-        <div class="page-title">对uboot和内核裁剪的一些理解</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#0-bootloader%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="nav-text">0.bootloader的概念</span></a></li></ol>
+        <div class="page-title">解决hexo部署到github与本地预览不一致的问题</div>
+        
 
     </div>
 </div>
